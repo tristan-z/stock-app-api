@@ -1,5 +1,5 @@
 from . import routes
 
 @routes.route("/")
-def main():
+def index():
     return "api active"
