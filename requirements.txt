@@ -1,1 +1,5 @@
 Flask==2.0.1
+
+gevent==21.8.0
+
+wsgiserver==1.3
