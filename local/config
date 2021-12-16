@@ -1,0 +1,3 @@
+`FLASK_APP=/home/clark/Documents/stock-app/stock-app-api/src/app.py FLASK_ENV=development flask run`
+
+Address already in use: `sudo fuser -k xxxx/tcp` where xxxx is your port name
