@@ -15,7 +15,7 @@ data = generate_news_data(20)
 
 @routes.route("/news")
 def news():
-    limit = int(    request.args.get("limit", 5))
+    limit = int(request.args.get("limit", 5))
     index = int(request.args.get("index", 0))
     message = data[index:index+limit]
     response = jsonify(message=message, total = len(data))

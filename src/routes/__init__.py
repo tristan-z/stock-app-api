@@ -6,3 +6,4 @@ from .historical import *
 from .news import *
 from .loser import *
 from .gainer import *
+from .day_summary import *

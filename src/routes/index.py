@@ -2,16 +2,13 @@ from . import routes
 from flask import jsonify
 import numpy
 
-data = numpy.repeat({
-  "symbol": "AAPL 1",
-  "name": "Apple, Inc.",
-  "price": 149.26,
-  "change": 0.34,
-}, 30)
+# TODO: abstract response construction to utilities 
+
+message = "the api is running"
 
 @routes.route("/")
 def index():
-    response = jsonify(message=data.tolist())
+    response = jsonify(message=message)
 
     # Enable Access-Control-Allow-Origin
     response.headers.add("Access-Control-Allow-Origin", "*")
